@@ -1,0 +1,16 @@
+<idea-plugin>
+    <id>sidecar.jhacker.cn</id>
+    <name>文件</name>
+    <vendor>Sidecar</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectService serviceImplementation="cn.jhacker.sidecar.SidecarProjectService"/>
+        <toolWindow
+            id="文件"
+            anchor="left"
+            icon="/icons/sidecarExplorer.svg"
+            factoryClass="cn.jhacker.sidecar.SidecarToolWindowFactory"/>
+    </extensions>
+</idea-plugin>
