@@ -1,0 +1,18 @@
+<idea-plugin>
+  <idea-version since-build="242" />
+  <change-notes><![CDATA[<ul>
+  <li>Initial MVP with external folder roots, lazy tree browsing, file opening, refresh, remove, copy path, and reveal actions.</li>
+</ul>]]></change-notes>
+  <description><![CDATA[Sidecar Files provides an independent external folder browser inside IntelliJ IDEA.
+It lets you preview and open local folders outside the current project without adding them to the Project Model,
+changing module settings, or triggering Maven or Gradle import.]]></description>
+  <version>0.1.0</version>
+  <id>sidecar.jhacker.cn</id>
+  <name>Sidecar Files</name>
+  <vendor>Sidecar</vendor>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <projectService serviceImplementation="cn.jhacker.sidecar.SidecarProjectService" />
+    <toolWindow id="文件" anchor="left" icon="/icons/sidecarExplorer.svg" factoryClass="cn.jhacker.sidecar.SidecarToolWindowFactory" />
+  </extensions>
+</idea-plugin>

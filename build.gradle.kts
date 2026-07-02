@@ -30,7 +30,7 @@ dependencies {
 intellijPlatform {
     pluginConfiguration {
         id = "sidecar.jhacker.cn"
-        name = "文件"
+        name = "Sidecar Files"
         version = project.version.toString()
 
         ideaVersion {
@@ -38,7 +38,9 @@ intellijPlatform {
         }
 
         description = """
-            文件提供一个独立的外部目录浏览工具窗口，可在不加入 IntelliJ IDEA Project Model 的情况下预览和打开项目外文件。
+            Sidecar Files provides an independent external folder browser inside IntelliJ IDEA.
+            It lets you preview and open local folders outside the current project without adding them to the Project Model,
+            changing module settings, or triggering Maven or Gradle import.
         """.trimIndent()
 
         changeNotes = """

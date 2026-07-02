@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>sidecar.jhacker.cn</id>
-    <name>文件</name>
+    <name>Sidecar Files</name>
     <vendor>Sidecar</vendor>
 
     <depends>com.intellij.modules.platform</depends>
